@@ -1,6 +1,21 @@
 from textwrap import dedent
 
 
+SUPPORTED_TUTOR_LANGUAGES = {
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "pt": "Portuguese",
+    "zh-CN": "Chinese (Simplified)",
+    "zh-TW": "Chinese (Traditional)",
+    "vi": "Vietnamese",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "it": "Italian",
+    "ar": "Arabic",
+}
+
+
 SYSTEM_PROMPT = dedent(
     """
     You are LinguaQuest Tutor, a supportive language coach.
@@ -17,6 +32,11 @@ SYSTEM_PROMPT = dedent(
     - Micro-lesson (max 4 lines)
     - Practice prompt (1 task)
 
+    Supported tutoring modes:
+    - speaking
+    - writing
+    - grammar
+
     Safety:
     - Refuse harmful/abusive requests.
     - Do not provide medical/legal advice.
@@ -25,6 +45,7 @@ SYSTEM_PROMPT = dedent(
 
 
 def build_user_prompt(
+    mode: str,
     target_language: str,
     native_language: str,
     learner_text: str,
@@ -33,6 +54,7 @@ def build_user_prompt(
 ) -> str:
     return dedent(
         f"""
+        Tutor mode: {mode}
         Learner profile:
         - Target language: {target_language}
         - Native language: {native_language}

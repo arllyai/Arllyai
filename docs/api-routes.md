@@ -26,14 +26,12 @@
 - `POST /v1/exercises/{exercise_id}/check`
 
 ## AI Tutor
-- `POST /v1/tutor/chat`
-- `POST /v1/tutor/explain`
-- `POST /v1/tutor/conversation-sim`
+- `POST /v1/tutor/assist` (mode: speaking | writing | grammar)
 
 ## Voice (ElevenLabs)
-- `POST /v1/voice/tts` (text -> audio URL/stream)
-- `GET /v1/voice/tts/{asset_id}`
-- `POST /v1/voice/pronunciation/score` (optional STT + scoring)
+- `GET /v1/voice/languages`
+- `POST /v1/voice/tts` (text + language -> audio URL/stream)
+- `POST /v1/voice/pronunciation/score` (target text + spoken text)
 
 ## Gamification
 - `GET /v1/gamification/stats`
