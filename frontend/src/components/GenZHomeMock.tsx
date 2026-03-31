@@ -1,6 +1,15 @@
+import { Logo } from "./Logo";
+
 export function GenZHomeMock() {
   return (
     <main style={{ maxWidth: 420, margin: "0 auto", padding: "1rem" }}>
+      <header className="card" style={{ marginBottom: "1rem" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+          <Logo size="md" />
+          <Logo size="xs" markOnly />
+        </div>
+      </header>
+
       <header className="card" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         <div>
           <div style={{ fontSize: 12, color: "var(--text-muted)" }}>Daily Streak</div>
@@ -10,7 +19,10 @@ export function GenZHomeMock() {
       </header>
 
       <section className="card" style={{ marginTop: "1rem" }}>
-        <h2 style={{ marginTop: 0 }}>Continue Lesson</h2>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <h2 style={{ marginTop: 0 }}>Continue Lesson</h2>
+          <Logo size="sm" markOnly />
+        </div>
         <p style={{ color: "var(--text-muted)" }}>Spanish • Unit 4 • Speaking drill</p>
         <button className="gradient-cta">Start 5-min Sprint</button>
       </section>

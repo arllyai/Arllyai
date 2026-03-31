@@ -22,6 +22,38 @@ body {
   color: var(--text-primary);
 }
 
+.logo-xs {
+  width: 24px;
+  height: 24px;
+}
+
+.logo-sm {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-md {
+  width: 120px;
+  height: 38px;
+}
+
+.logo-lg {
+  width: 160px;
+  height: 48px;
+}
+
+@media (max-width: 420px) {
+  .logo-md {
+    width: 102px;
+    height: 32px;
+  }
+
+  .logo-lg {
+    width: 132px;
+    height: 40px;
+  }
+}
+
 .gradient-cta {
   background: linear-gradient(135deg, var(--brand-violet) 0%, var(--brand-pink) 55%, var(--brand-sky) 100%);
   color: #fff;

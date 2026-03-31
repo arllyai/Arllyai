@@ -52,3 +52,9 @@ Added an original **Canva-inspired** (not copied) visual system in:
 - `frontend/src/app/page.tsx`
 
 This gives your app a bold gradient, playful cards, streak-first layout, and mobile-friendly interaction style.
+
+### Logo assets and mobile sizing
+- Added responsive logo assets:
+  - `frontend/public/logos/arllyai-logo.svg`
+  - `frontend/public/logos/arllyai-icon.svg`
+- Added reusable `Logo` component with size variants (`xs/sm/md/lg`) for mobile-friendly layouts.
