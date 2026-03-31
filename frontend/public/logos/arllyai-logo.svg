@@ -1,0 +1,11 @@
+<svg width="512" height="160" viewBox="0 0 512 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Arlly.ai logo">
+  <defs>
+    <linearGradient id="arlly-gradient" x1="32" y1="20" x2="480" y2="140" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.55" stop-color="#6B8CF3"/>
+      <stop offset="1" stop-color="#53D4E0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="160" rx="28" fill="transparent"/>
+  <text x="26" y="112" font-family="Inter, Arial, sans-serif" font-size="96" font-weight="600" fill="url(#arlly-gradient)">Arlly.ai</text>
+</svg>
