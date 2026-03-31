@@ -1,0 +1,47 @@
+:root {
+  --brand-violet: #7c3aed;
+  --brand-pink: #ec4899;
+  --brand-sky: #38bdf8;
+  --brand-lime: #84cc16;
+  --surface-0: #0b1020;
+  --surface-1: #121a33;
+  --text-primary: #f9fafb;
+  --text-muted: #a5b4fc;
+  --card-radius: 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(1200px 700px at 100% -10%, rgba(124, 58, 237, 0.2), transparent),
+    radial-gradient(900px 600px at 0% 120%, rgba(56, 189, 248, 0.14), transparent), var(--surface-0);
+  color: var(--text-primary);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, var(--brand-violet) 0%, var(--brand-pink) 55%, var(--brand-sky) 100%);
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.xp-chip {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  box-shadow: 0 0 24px rgba(124, 58, 237, 0.45);
+  font-family: "Space Grotesk", Inter, sans-serif;
+}
+
+.card {
+  background: var(--surface-1);
+  border-radius: var(--card-radius);
+  border: 1px solid rgba(165, 180, 252, 0.2);
+  padding: 1rem;
+}

@@ -42,3 +42,13 @@ ELEVENLABS_LANGUAGE_VOICE_MAP_JSON='{"en":"voice_id_en","es":"voice_id_es","fr":
 - Arabic (`ar`)
 
 See the `docs/` and `backend/` folders for implementation details.
+
+## Gen Z UI Pack
+
+Added an original **Canva-inspired** (not copied) visual system in:
+- `docs/design-system.md`
+- `frontend/src/app/globals.css`
+- `frontend/src/components/GenZHomeMock.tsx`
+- `frontend/src/app/page.tsx`
+
+This gives your app a bold gradient, playful cards, streak-first layout, and mobile-friendly interaction style.
